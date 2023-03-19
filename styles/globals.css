@@ -13,10 +13,7 @@
 
 body {
   background: linear-gradient(45deg, red, rgb(143, 143, 233));
-  background-size: cover;
-  background-position: 100%;
   color: #373b64;
-
 }
 
 a {
