@@ -1,19 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import Banner from '@/components/Banner/Banner'
-import { useAppSelector } from '@/app/hooks'
-import { selectCount } from '@/features/counter/counterSlice'
+import Head from "next/head";
+import Image from "next/image";
+import { Roboto } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import Banner from "@/components/Banner/Banner";
+import { useAppSelector } from "@/app/hooks";
+import { selectCount } from "@/features/counter/counterSlice";
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const handleOnBannerBtnClick = () => {
-    console.log('hey here is banner btn click')
-  }
+    console.log("hey here is banner btn click");
+  };
   const count = useAppSelector(selectCount);
-  console.log('count', count)
   return (
     <>
       <Head>
@@ -23,8 +21,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Banner buttonText='View stores nearby' handleOnClick={handleOnBannerBtnClick}/>
+        <Banner
+          buttonText="View stores nearby"
+          handleOnClick={handleOnBannerBtnClick}
+        />
       </main>
     </>
-  )
+  );
 }
