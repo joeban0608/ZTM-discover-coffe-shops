@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Roboto } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import styles from "@/styles/Home.module.scss";
 import Banner from "@/components/Banner/Banner";
 import { useAppSelector } from "@/app/hooks";
 import { selectCount } from "@/features/counter/counterSlice";
