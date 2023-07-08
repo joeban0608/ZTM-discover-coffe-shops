@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Banner from '@/components/Banner/Banner'
+import { useAppSelector } from '@/app/hooks'
+import { selectCount } from '@/features/counter/counterSlice'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,6 +12,8 @@ export default function Home() {
   const handleOnBannerBtnClick = () => {
     console.log('hey here is banner btn click')
   }
+  const count = useAppSelector(selectCount);
+  console.log('count', count)
   return (
     <>
       <Head>
