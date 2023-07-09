@@ -6,7 +6,6 @@ import Banner from "@/components/Banner/Banner";
 import { useAppSelector } from "@/app/hooks";
 import { selectCount } from "@/features/counter/counterSlice";
 
-
 export default function Home() {
   const handleOnBannerBtnClick = () => {
     console.log("hey here is banner btn click");
@@ -24,6 +23,13 @@ export default function Home() {
         <Banner
           buttonText="View stores nearby"
           handleOnClick={handleOnBannerBtnClick}
+        />
+        <Image
+          className={styles.heroImage}
+          src="/images/hero-image.png"
+          alt="banner img bg"
+          width={700}
+          height={400}
         />
       </main>
     </>
