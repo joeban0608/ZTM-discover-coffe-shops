@@ -9,8 +9,8 @@ const Banner = (props: BannerProps) => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        <span className={styles.title1}>Coffee</span>
-        <span className={styles.title2}>Connoisseur</span>
+        <p className={styles.title1}>Coffee</p>
+        <p className={styles.title2}>Connoisseur</p>
       </h1>
       <p className={styles.subTitle}>Discover your local coffee stores!</p>
       <div className={styles.buttonWrapper}>
